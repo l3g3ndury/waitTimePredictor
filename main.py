@@ -12,19 +12,27 @@ metaAvatar = pd.merge(avatar, meta, left_on="date", right_on="DATE")
 metaAvatar = metaAvatar.drop("DATE", axis=1)
 metaAvatar["date"] = pd.to_datetime(metaAvatar["date"])
 metaAvatar = metaAvatar.fillna(0)
+metaAvatar.head()
 
 print(metaAvatar)
 
 averageByDate = metaAvatar.groupby("date")["SPOSTMIN"].mean()
 averageByDate = averageByDate.reset_index()
-averageByDate = pd.DataFrame(averageByDate, columns=["date","SPOSTMIN"])
+averageByDate = pd.DataFrame(averageByDate, columns=["date", "SPOSTMIN"])
 
-print (averageByDate)
+print(averageByDate)
 
 meta["DATE"] = pd.to_datetime(meta["DATE"])
 
-metaAvatarNew = pd.merge(averageByDate, meta, left_on="date", right_on="DATE")
-metaAvatarNew = metaAvatarNew.drop("DATE", axis=1)
+metaAvatarNew = pd.merge(averageByDate, meta, left_on="date", right_on="DATE").drop("DATE", axis=1)
 metaAvatarNew = metaAvatarNew.fillna(0)
+metaAvatarNew.head()
 
 print(metaAvatarNew)
+
+# As the rule for featureList gets smaller, the more features are found. Ideally, we want the right amount of features.
+rule = 0.20
+metaAvatarNew_corr = metaAvatarNew.corr(numeric_only=True)["SPOSTMIN"][:-2]
+featureList = metaAvatarNew_corr[abs(metaAvatarNew_corr) > rule].sort_values(ascending=False)
+
+print("{} strongly correlated values found with SPOSTMIN:\n{}".format(len(featureList), featureList))
