@@ -36,3 +36,10 @@ metaAvatarNew_corr = metaAvatarNew.corr(numeric_only=True)["SPOSTMIN"][:-2]
 featureList = metaAvatarNew_corr[abs(metaAvatarNew_corr) > rule].sort_values(ascending=False)
 
 print("{} strongly correlated values found with SPOSTMIN:\n{}".format(len(featureList), featureList))
+
+# Modified the feature list to remove SPOSTMIN, now that we have it.
+featureList = featureList.to_frame()
+featureList = featureList.reset_index()
+featureList = featureList.iloc[:, 0]
+featureList = featureList.toList()
+featureList.remove("SPOSTMIN")
