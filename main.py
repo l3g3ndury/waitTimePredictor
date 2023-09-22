@@ -1,10 +1,9 @@
+import numpy as np
 import pandas as pd
+import sklearn.model_selection
 
 meta = pd.read_csv("datasets/metadata.csv")
 avatar = pd.read_csv("datasets/flight_of_passage.csv")
-
-print(meta)
-print(avatar)
 
 avatar = avatar[avatar.SPOSTMIN > 0]
 
@@ -14,13 +13,9 @@ metaAvatar["date"] = pd.to_datetime(metaAvatar["date"])
 metaAvatar = metaAvatar.fillna(0)
 metaAvatar.head()
 
-print(metaAvatar)
-
 averageByDate = metaAvatar.groupby("date")["SPOSTMIN"].mean()
 averageByDate = averageByDate.reset_index()
 averageByDate = pd.DataFrame(averageByDate, columns=["date", "SPOSTMIN"])
-
-print(averageByDate)
 
 meta["DATE"] = pd.to_datetime(meta["DATE"])
 
@@ -41,5 +36,17 @@ print("{} strongly correlated values found with SPOSTMIN:\n{}".format(len(featur
 featureList = featureList.to_frame()
 featureList = featureList.reset_index()
 featureList = featureList.iloc[:, 0]
-featureList = featureList.toList()
+featureList = featureList.to_list()
 featureList.remove("SPOSTMIN")
+
+x = metaAvatarNew[featureList]
+y = metaAvatarNew["SPOSTMIN"]
+
+# Setting up model based on data manipulation above.
+xTrain, xTest, yTrain, yTest = sklearn.model_selection.train_test_split(x, y, test_size=0.25)
+
+yTrain = np.log(yTrain)
+yTest = np.log(yTest)
+
+print('Number of observations:', x.shape[0])
+print('Number of predictors:', x.shape[1])
