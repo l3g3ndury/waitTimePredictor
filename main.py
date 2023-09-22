@@ -1,6 +1,10 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import sklearn.model_selection
+import sklearn.linear_model
+import sklearn.metrics as metrics
+import matplotlib.pyplot as plot
 
 meta = pd.read_csv("datasets/metadata.csv")
 avatar = pd.read_csv("datasets/flight_of_passage.csv")
@@ -50,3 +54,34 @@ yTest = np.log(yTest)
 
 print('Number of observations:', x.shape[0])
 print('Number of predictors:', x.shape[1])
+
+linear = sklearn.linear_model.LinearRegression()
+model = linear.fit(xTrain, yTrain)
+yLinearPrediction = linear.predict(xTest)
+
+print('Mean Absolute Error:', metrics.mean_absolute_error(yTest, yLinearPrediction))
+print('Mean Squared Error:', metrics.mean_squared_error(yTest, yLinearPrediction))
+print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(yTest, yLinearPrediction)))
+
+# Caculating Error
+error = round(metrics.mean_absolute_error(yTest, yLinearPrediction), 2)
+meanAPE = 100 * (error / yTest)
+accuracy = (100 - np.mean(meanAPE)).round(2,)
+
+print('Accuracy:', round(accuracy, 2), '%')
+
+yLinearPrediction = pd.DataFrame(yLinearPrediction)
+yComparison = pd.concat([metaAvatar, yLinearPrediction], axis=1)
+yComparison = yComparison.rename({"date": "Date", "SPOSTMIN": "actualTime", 0: "predictedTime"}, axis=1)
+yComparison.predictedTime = np.exp(yComparison.predictedTime)
+
+plt.plot(yComparison.Date, yComparison.predictedTime, "b-", label="Predicted")
+plt.plot(yComparison.Date, yComparison.actualTime, "ro", label="Actual", markersize=3)
+
+plt.xticks(rotation=60)
+plt.legend()
+
+plt.xlabel("Date")
+plt.ylabel("Average Wait Time")
+plt.title("Actual and Predicted Wait Times")
+plt.show()
