@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09F5C9592C312005002BE8AC /* WaitTimePredictorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5C9582C312005002BE8AC /* WaitTimePredictorApp.swift */; };
+		09F5C95B2C312005002BE8AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5C95A2C312005002BE8AC /* ContentView.swift */; };
+		09F5C95D2C312006002BE8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F5C95C2C312006002BE8AC /* Assets.xcassets */; };
+		09F5C9612C312006002BE8AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F5C9602C312006002BE8AC /* Preview Assets.xcassets */; };
+		09F5C96B2C312006002BE8AC /* WaitTimePredictorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5C96A2C312006002BE8AC /* WaitTimePredictorTests.swift */; };
+		09F5C9752C312006002BE8AC /* WaitTimePredictorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5C9742C312006002BE8AC /* WaitTimePredictorUITests.swift */; };
+		09F5C9772C312006002BE8AC /* WaitTimePredictorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5C9762C312006002BE8AC /* WaitTimePredictorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09F5C9672C312006002BE8AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09F5C94D2C312005002BE8AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09F5C9542C312005002BE8AC;
+			remoteInfo = WaitTimePredictor;
+		};
+		09F5C9712C312006002BE8AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09F5C94D2C312005002BE8AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09F5C9542C312005002BE8AC;
+			remoteInfo = WaitTimePredictor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09F5C9552C312005002BE8AC /* WaitTimePredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaitTimePredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09F5C9582C312005002BE8AC /* WaitTimePredictorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitTimePredictorApp.swift; sourceTree = "<group>"; };
+		09F5C95A2C312005002BE8AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		09F5C95C2C312006002BE8AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09F5C95E2C312006002BE8AC /* WaitTimePredictor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaitTimePredictor.entitlements; sourceTree = "<group>"; };
+		09F5C9602C312006002BE8AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09F5C9662C312006002BE8AC /* WaitTimePredictorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaitTimePredictorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09F5C96A2C312006002BE8AC /* WaitTimePredictorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitTimePredictorTests.swift; sourceTree = "<group>"; };
+		09F5C9702C312006002BE8AC /* WaitTimePredictorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaitTimePredictorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09F5C9742C312006002BE8AC /* WaitTimePredictorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitTimePredictorUITests.swift; sourceTree = "<group>"; };
+		09F5C9762C312006002BE8AC /* WaitTimePredictorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitTimePredictorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09F5C9522C312005002BE8AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09F5C9632C312006002BE8AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09F5C96D2C312006002BE8AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09F5C94C2C312005002BE8AC = {
+			isa = PBXGroup;
+			children = (
+				09F5C9572C312005002BE8AC /* WaitTimePredictor */,
+				09F5C9692C312006002BE8AC /* WaitTimePredictorTests */,
+				09F5C9732C312006002BE8AC /* WaitTimePredictorUITests */,
+				09F5C9562C312005002BE8AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09F5C9562C312005002BE8AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09F5C9552C312005002BE8AC /* WaitTimePredictor.app */,
+				09F5C9662C312006002BE8AC /* WaitTimePredictorTests.xctest */,
+				09F5C9702C312006002BE8AC /* WaitTimePredictorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09F5C9572C312005002BE8AC /* WaitTimePredictor */ = {
+			isa = PBXGroup;
+			children = (
+				09F5C9582C312005002BE8AC /* WaitTimePredictorApp.swift */,
+				09F5C95A2C312005002BE8AC /* ContentView.swift */,
+				09F5C95C2C312006002BE8AC /* Assets.xcassets */,
+				09F5C95E2C312006002BE8AC /* WaitTimePredictor.entitlements */,
+				09F5C95F2C312006002BE8AC /* Preview Content */,
+			);
+			path = WaitTimePredictor;
+			sourceTree = "<group>";
+		};
+		09F5C95F2C312006002BE8AC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				09F5C9602C312006002BE8AC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09F5C9692C312006002BE8AC /* WaitTimePredictorTests */ = {
+			isa = PBXGroup;
+			children = (
+				09F5C96A2C312006002BE8AC /* WaitTimePredictorTests.swift */,
+			);
+			path = WaitTimePredictorTests;
+			sourceTree = "<group>";
+		};
+		09F5C9732C312006002BE8AC /* WaitTimePredictorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09F5C9742C312006002BE8AC /* WaitTimePredictorUITests.swift */,
+				09F5C9762C312006002BE8AC /* WaitTimePredictorUITestsLaunchTests.swift */,
+			);
+			path = WaitTimePredictorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09F5C9542C312005002BE8AC /* WaitTimePredictor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09F5C97A2C312006002BE8AC /* Build configuration list for PBXNativeTarget "WaitTimePredictor" */;
+			buildPhases = (
+				09F5C9512C312005002BE8AC /* Sources */,
+				09F5C9522C312005002BE8AC /* Frameworks */,
+				09F5C9532C312005002BE8AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaitTimePredictor;
+			productName = WaitTimePredictor;
+			productReference = 09F5C9552C312005002BE8AC /* WaitTimePredictor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09F5C9652C312006002BE8AC /* WaitTimePredictorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09F5C97D2C312006002BE8AC /* Build configuration list for PBXNativeTarget "WaitTimePredictorTests" */;
+			buildPhases = (
+				09F5C9622C312006002BE8AC /* Sources */,
+				09F5C9632C312006002BE8AC /* Frameworks */,
+				09F5C9642C312006002BE8AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09F5C9682C312006002BE8AC /* PBXTargetDependency */,
+			);
+			name = WaitTimePredictorTests;
+			productName = WaitTimePredictorTests;
+			productReference = 09F5C9662C312006002BE8AC /* WaitTimePredictorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09F5C96F2C312006002BE8AC /* WaitTimePredictorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09F5C9802C312006002BE8AC /* Build configuration list for PBXNativeTarget "WaitTimePredictorUITests" */;
+			buildPhases = (
+				09F5C96C2C312006002BE8AC /* Sources */,
+				09F5C96D2C312006002BE8AC /* Frameworks */,
+				09F5C96E2C312006002BE8AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09F5C9722C312006002BE8AC /* PBXTargetDependency */,
+			);
+			name = WaitTimePredictorUITests;
+			productName = WaitTimePredictorUITests;
+			productReference = 09F5C9702C312006002BE8AC /* WaitTimePredictorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09F5C94D2C312005002BE8AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					09F5C9542C312005002BE8AC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					09F5C9652C312006002BE8AC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 09F5C9542C312005002BE8AC;
+					};
+					09F5C96F2C312006002BE8AC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 09F5C9542C312005002BE8AC;
+					};
+				};
+			};
+			buildConfigurationList = 09F5C9502C312005002BE8AC /* Build configuration list for PBXProject "WaitTimePredictor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09F5C94C2C312005002BE8AC;
+			productRefGroup = 09F5C9562C312005002BE8AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09F5C9542C312005002BE8AC /* WaitTimePredictor */,
+				09F5C9652C312006002BE8AC /* WaitTimePredictorTests */,
+				09F5C96F2C312006002BE8AC /* WaitTimePredictorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09F5C9532C312005002BE8AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F5C9612C312006002BE8AC /* Preview Assets.xcassets in Resources */,
+				09F5C95D2C312006002BE8AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09F5C9642C312006002BE8AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09F5C96E2C312006002BE8AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09F5C9512C312005002BE8AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F5C95B2C312005002BE8AC /* ContentView.swift in Sources */,
+				09F5C9592C312005002BE8AC /* WaitTimePredictorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09F5C9622C312006002BE8AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F5C96B2C312006002BE8AC /* WaitTimePredictorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09F5C96C2C312006002BE8AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09F5C9752C312006002BE8AC /* WaitTimePredictorUITests.swift in Sources */,
+				09F5C9772C312006002BE8AC /* WaitTimePredictorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09F5C9682C312006002BE8AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09F5C9542C312005002BE8AC /* WaitTimePredictor */;
+			targetProxy = 09F5C9672C312006002BE8AC /* PBXContainerItemProxy */;
+		};
+		09F5C9722C312006002BE8AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09F5C9542C312005002BE8AC /* WaitTimePredictor */;
+			targetProxy = 09F5C9712C312006002BE8AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09F5C9782C312006002BE8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09F5C9792C312006002BE8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		09F5C97B2C312006002BE8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WaitTimePredictor/WaitTimePredictor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaitTimePredictor/Preview Content\"";
+				DEVELOPMENT_TEAM = QS4FZWL6J5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = L0cvu.WaitTimePredictor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09F5C97C2C312006002BE8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WaitTimePredictor/WaitTimePredictor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaitTimePredictor/Preview Content\"";
+				DEVELOPMENT_TEAM = QS4FZWL6J5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = L0cvu.WaitTimePredictor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		09F5C97E2C312006002BE8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QS4FZWL6J5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = L0cvu.WaitTimePredictorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaitTimePredictor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WaitTimePredictor";
+			};
+			name = Debug;
+		};
+		09F5C97F2C312006002BE8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QS4FZWL6J5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = L0cvu.WaitTimePredictorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaitTimePredictor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WaitTimePredictor";
+			};
+			name = Release;
+		};
+		09F5C9812C312006002BE8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QS4FZWL6J5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = L0cvu.WaitTimePredictorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaitTimePredictor;
+			};
+			name = Debug;
+		};
+		09F5C9822C312006002BE8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QS4FZWL6J5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = L0cvu.WaitTimePredictorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaitTimePredictor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09F5C9502C312005002BE8AC /* Build configuration list for PBXProject "WaitTimePredictor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F5C9782C312006002BE8AC /* Debug */,
+				09F5C9792C312006002BE8AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09F5C97A2C312006002BE8AC /* Build configuration list for PBXNativeTarget "WaitTimePredictor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F5C97B2C312006002BE8AC /* Debug */,
+				09F5C97C2C312006002BE8AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09F5C97D2C312006002BE8AC /* Build configuration list for PBXNativeTarget "WaitTimePredictorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F5C97E2C312006002BE8AC /* Debug */,
+				09F5C97F2C312006002BE8AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09F5C9802C312006002BE8AC /* Build configuration list for PBXNativeTarget "WaitTimePredictorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F5C9812C312006002BE8AC /* Debug */,
+				09F5C9822C312006002BE8AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09F5C94D2C312005002BE8AC /* Project object */;
+}
