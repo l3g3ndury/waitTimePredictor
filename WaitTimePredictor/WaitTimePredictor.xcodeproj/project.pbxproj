@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09E5DEAD2C3660370091CD23 /* RideCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5DEAC2C3660370091CD23 /* RideCardView.swift */; };
+		09E5DEAF2C3660690091CD23 /* ParkFilterOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5DEAE2C3660690091CD23 /* ParkFilterOptionsView.swift */; };
+		09E5DEB12C3660A20091CD23 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5DEB02C3660A20091CD23 /* Park.swift */; };
+		09E5DEB32C36611B0091CD23 /* RideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5DEB22C36611B0091CD23 /* RideViewModel.swift */; };
+		09E5DEB52C3661770091CD23 /* GetHeightModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5DEB42C3661770091CD23 /* GetHeightModifier.swift */; };
 		09F5C9592C312005002BE8AC /* WaitTimePredictorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5C9582C312005002BE8AC /* WaitTimePredictorApp.swift */; };
 		09F5C95B2C312005002BE8AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F5C95A2C312005002BE8AC /* ContentView.swift */; };
 		09F5C95D2C312006002BE8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F5C95C2C312006002BE8AC /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09E5DEAC2C3660370091CD23 /* RideCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCardView.swift; sourceTree = "<group>"; };
+		09E5DEAE2C3660690091CD23 /* ParkFilterOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkFilterOptionsView.swift; sourceTree = "<group>"; };
+		09E5DEB02C3660A20091CD23 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		09E5DEB22C36611B0091CD23 /* RideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideViewModel.swift; sourceTree = "<group>"; };
+		09E5DEB42C3661770091CD23 /* GetHeightModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHeightModifier.swift; sourceTree = "<group>"; };
 		09F5C9552C312005002BE8AC /* WaitTimePredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaitTimePredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F5C9582C312005002BE8AC /* WaitTimePredictorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitTimePredictorApp.swift; sourceTree = "<group>"; };
 		09F5C95A2C312005002BE8AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +82,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09E5DEB62C3661910091CD23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09E5DEAC2C3660370091CD23 /* RideCardView.swift */,
+				09E5DEAE2C3660690091CD23 /* ParkFilterOptionsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		09E5DEB72C3661AC0091CD23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09E5DEB02C3660A20091CD23 /* Park.swift */,
+				09E5DEB22C36611B0091CD23 /* RideViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09E5DEB82C3661CB0091CD23 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				09E5DEB42C3661770091CD23 /* GetHeightModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		09F5C94C2C312005002BE8AC = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +143,9 @@
 		09F5C95F2C312006002BE8AC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				09E5DEB82C3661CB0091CD23 /* ViewModifiers */,
+				09E5DEB72C3661AC0091CD23 /* Models */,
+				09E5DEB62C3661910091CD23 /* Views */,
 				09F5C9602C312006002BE8AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -259,8 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E5DEB32C36611B0091CD23 /* RideViewModel.swift in Sources */,
 				09F5C95B2C312005002BE8AC /* ContentView.swift in Sources */,
+				09E5DEAF2C3660690091CD23 /* ParkFilterOptionsView.swift in Sources */,
 				09F5C9592C312005002BE8AC /* WaitTimePredictorApp.swift in Sources */,
+				09E5DEB12C3660A20091CD23 /* Park.swift in Sources */,
+				09E5DEB52C3661770091CD23 /* GetHeightModifier.swift in Sources */,
+				09E5DEAD2C3660370091CD23 /* RideCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
